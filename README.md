@@ -46,8 +46,8 @@ php artisan vendor:publish --provider="SuperShipVN\SuperShip\SuperShipServicePro
 
 ```php
 'providers' => [
-	// ...
-	SuperShipVN\SuperShip\SuperShipServiceProvider::class
+    // ...
+    SuperShipVN\SuperShip\SuperShipServiceProvider::class
 ];
 ```
 
@@ -55,8 +55,8 @@ php artisan vendor:publish --provider="SuperShipVN\SuperShip\SuperShipServicePro
 
 ```php
 'aliases' => [
-	// ...
-	'SuperShip' => SuperShipVN\SuperShip\Facades\SuperShip::class
+    // ...
+    'SuperShip' => SuperShipVN\SuperShip\Facades\SuperShip::class
 ];
 ```
 
@@ -125,6 +125,7 @@ Optionally, you can retrieve the Order Code using the following method:
 
 ```php
 $order = SuperShip::createOrder($params);
+
 return $order['results']['code'];
 ```
 
@@ -134,6 +135,7 @@ To retrieve single order, call the `getOrderInfo` method using the following syn
 
 ```php
 $supershipOrderCode = 'SUPERSHIP_ORDER_CODE';
+
 SuperShip::getOrderInfo($supershipOrderCode);
 ```
 
