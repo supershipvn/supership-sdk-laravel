@@ -1,0 +1,49 @@
+{
+    "name": "supershipvn/supership-sdk-laravel",
+    "description": "SuperShip SDK for Laravel",
+    "keywords": [
+        "supership",
+        "sdk",
+        "laravel",
+        "php"
+    ],
+    "homepage": "https://github.com/supershipvn/supership-sdk-laravel",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "SuperTek",
+            "email": "supertek@supership.vn"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/supershipvn/supership-sdk-laravel/issues"
+    },
+    "require": {
+        "php": "^5.4|^7.0|^8.0",
+        "illuminate/support": "^5.0|^6.0|^7.0|^8.0|^9.0|^10.0",
+        "supershipvn/supership-sdk-php": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^3.0|^4.0|^5.0|^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SuperShipVN\\SuperShip\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SuperShipVN\\SuperShip\\SuperShipServiceProvider"
+            ],
+            "aliases": {
+                "SuperShip": "SuperShipVN\\SuperShip\\Facades\\SuperShip"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
